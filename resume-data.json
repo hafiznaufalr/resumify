@@ -1,0 +1,88 @@
+{
+  "personal": {
+    "name": "Hafiz Naufal Rahman",
+    "location": "Jakarta, Indonesia",
+    "email": "hafiznaufalr@gmail.com",
+    "phone": null,
+    "linkedin": {
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/hafiznaufalrahman"
+    }
+  },
+  "summary": "Impact Driven Mobile Engineer with a strong Android foundation and deep iOS specialization. I leverage domain-driven design and AI-powered workflows to accelerate problem-solving and build scalable, high-performance applications.",
+  "experience": [
+    {
+      "company": "Gojek",
+      "role": "Software Engineer 2 (iOS)",
+      "team": "Transport",
+      "period": "Jun 2024 – Present",
+      "description": "Gojek is The on-demand arm of GoTo Group, providing an integrated ecosystem for transport, food, and logistics services.",
+      "highlights": [
+        "Implemented the **'Boost on Finding Driver'** intervention to capture **~8% of total priority bookings** and drive **18% feature adoption** by developing a contextual upsell mechanism that allows users to instantly upgrade their booking priority during supply shortages.",
+        "Streamlined cross-functional workflows by **centralizing localization** infrastructure across 14 modules. This bridged the gap between the UX Writing (UXW) team and Engineering, **improving reusability, reducing build times and operational bottlenecks**.",
+        "**Optimized legacy code** to improve pre-download 3D icons mechanism efficiency, **reducing daily CDN bandwidth from ~55TB to ~25TB**. This directly lowered operational backend costs while maintaining seamless UI performance for the end-user.",
+        "Played a critical role by **double-hatting** as a mobile engineer after my first six months to navigate resource discrepancies on a key project, earning a **'Significant Impact'** performance rating before transitioning to a dedicated iOS role."
+      ]
+    },
+    {
+      "company": "Bareksa",
+      "role": "Software Engineer (Android)",
+      "team": null,
+      "period": "Jul 2021 – Jun 2024",
+      "description": "Bareksa is Indonesia's first integrated e-investment platform offering 200+ mutual funds and serving as an official Ministry of Finance partner for Government Securities (SBN).",
+      "highlights": [
+        "Drive, develop, and apply Design System components for all core pages.",
+        "Boost AUM (Assets Under Management) & transaction by developing & maintaining Loyalty Program feature.",
+        "Drive \"Super App Revamp\" project to consolidating all new vertical in vital pages (home, portfolio, transaction, help center)",
+        "Utilized 3rd party tools to handle promo campaigns (MoEngage) & deeplink-ing (Appsflyer) to simplify our marketing process with low budget & low maintenance effort."
+      ]
+    },
+    {
+      "company": "Qasir.id",
+      "role": "Software Engineer (Android)",
+      "team": null,
+      "period": "Sep 2020 – Apr 2021",
+      "description": "Qasir is Cloud-based mobile POS platform helping MSMEs drive growth through digital sales recording, inventory control, and real-time analytics.",
+      "highlights": [
+        "Add observability in the account creation page to track new user pain problems.",
+        "Boost revenue from initiating & developing Bundling Package premium features."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bina Nusantara University",
+      "degree": "B. Eng in Information System",
+      "period": "Aug 2020 - Jul 2024",
+      "details": ["CGPA: 3.83/4.00"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Laviola - Local Brand Online E-Commerce",
+      "description": "Since 2022, I have spearheaded the end-to-end development and ongoing maintenance of Laviola, a custom digital ecosystem for an Indonesian apparel distributor that includes an Android app, web dashboard, and backend infrastructure designed to automate complex, role-based pricing structures for distinct customer tiers.",
+      "url": {
+        "label": "Url",
+        "href": "https://play.google.com/store/apps/details?id=biz.laviola"
+      }
+    },
+    {
+      "title": "Best Concept Champion Hackathon by Sicepat Indonesia - 2022",
+      "description": "I engineered a route optimization application for last-mile logistics that dynamically generates delivery itineraries based on geospatial proximity, significantly reducing operational costs and fuel consumption while integrating essential features for customer communication and digital proof of delivery."
+    },
+    {
+      "title": "1st Place Education App Competition by Educational Ministry - 2019",
+      "description": "I engineered Sibowo, a culturally-focused mobile app designed to re-engage the younger generation with the Javanese language by transforming traditional learning into an immersive experience featuring quizzes, animated content, and gamified vocabulary lists.",
+      "url": {
+        "label": "https://regional.kompas.com/read/2019/09/19/17380531/siswa-smk-ini-ciptakan-si-bowo-aplikasi-belajar-bahasa-jawa",
+        "href": "https://regional.kompas.com/read/2019/09/19/17380531/siswa-smk-ini-ciptakan-si-bowo-aplikasi-belajar-bahasa-jawa"
+      }
+    }
+  ],
+  "skills": [
+    { "category": "Languages", "items": "Swift, Kotlin, Java, Flutter" },
+    { "category": "Mobile Tech", "items": "UIKit, SwiftUI, Coroutines, RxJava, Modular Architecture, MVP, MVVM" },
+    { "category": "AI Tools", "items": "Gemini/Cursor/OpenCode" },
+    { "category": "Skills", "items": "Problem Solving, Critical Thinking, System Design, Leadership, Project Management" }
+  ]
+}
