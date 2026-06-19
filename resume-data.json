@@ -13,6 +13,7 @@
   "experience": [
     {
       "company": "Gojek",
+      "icon": "icons/gojek.png",
       "role": "Software Engineer 2 (iOS)",
       "team": "Transport",
       "period": "Jun 2024 – Present",
@@ -26,6 +27,7 @@
     },
     {
       "company": "Bareksa",
+      "icon": "icons/bareksa.png",
       "role": "Software Engineer (Android)",
       "team": null,
       "period": "Jul 2021 – Jun 2024",
@@ -39,6 +41,7 @@
     },
     {
       "company": "Qasir.id",
+      "icon": "icons/qasir.png",
       "role": "Software Engineer (Android)",
       "team": null,
       "period": "Sep 2020 – Apr 2021",
@@ -82,7 +85,6 @@
   "skills": [
     { "category": "Languages", "items": "Swift, Kotlin, Java, Flutter" },
     { "category": "Mobile Tech", "items": "UIKit, SwiftUI, Coroutines, RxJava, Modular Architecture, MVP, MVVM" },
-    { "category": "AI Tools", "items": "Gemini/Cursor/OpenCode" },
     { "category": "Skills", "items": "Problem Solving, Critical Thinking, System Design, Leadership, Project Management" }
   ]
 }

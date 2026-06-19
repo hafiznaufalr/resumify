@@ -89,18 +89,42 @@ function renderHighlights(items, className = "entry__list") {
   return `<ul class="${className}">${listItems}</ul>`;
 }
 
-function renderJobTitleDesktop({ company, role, team }) {
-  const rolePart = [role, team].filter(hasValue).join(" - ");
-  const companyPrefix = hasValue(company) ? `<strong>${escapeHtml(company)} - </strong>` : "";
-
-  if (!hasValue(rolePart)) {
-    return companyPrefix.replace(/ - <\/strong>$/, "</strong>");
+function renderCompanyIcon(icon, company) {
+  if (!hasValue(icon)) {
+    return "";
   }
 
-  return `${companyPrefix}<span class="entry__title-regular">${escapeHtml(rolePart)}</span>`;
+  const alt = hasValue(company) ? `${company} logo` : "Company logo";
+  return `<img class="entry__company-icon" src="${escapeHtml(assetUrl(icon))}" alt="${escapeHtml(alt)}" width="20" height="20" loading="lazy" decoding="async">`;
 }
 
-function renderEntryHeader({ company, role, team, institution, degree, period }) {
+function renderCompanyName(company, icon) {
+  if (!hasValue(company)) {
+    return "";
+  }
+
+  const iconHtml = renderCompanyIcon(icon, company);
+  return `<h3 class="entry__company">${iconHtml}<span class="entry__company-name">${escapeHtml(company)}</span></h3>`;
+}
+
+function renderJobTitleDesktop({ company, role, team, icon }) {
+  const rolePart = [role, team].filter(hasValue).join(" - ");
+  const iconHtml = renderCompanyIcon(icon, company);
+  const companyBlock = hasValue(company)
+    ? `<span class="entry__company-inline">${iconHtml}<strong class="entry__company-label">${escapeHtml(company)}</strong></span>`
+    : "";
+  const separator =
+    hasValue(company) && hasValue(rolePart)
+      ? `<span class="entry__title-sep" aria-hidden="true">-</span>`
+      : "";
+  const roleHtml = hasValue(rolePart)
+    ? `<span class="entry__title-regular">${escapeHtml(rolePart)}</span>`
+    : "";
+
+  return `${companyBlock}${separator}${roleHtml}`;
+}
+
+function renderEntryHeader({ company, role, team, institution, degree, period, icon }) {
   const periodHtml = hasValue(period)
     ? `<p class="entry__period">${escapeHtml(period)}</p>`
     : "";
@@ -125,10 +149,8 @@ function renderEntryHeader({ company, role, team, institution, degree, period })
   const roleLine = roleParts.length
     ? `<p class="entry__role">${escapeHtml(roleParts.join(" · "))}</p>`
     : "";
-  const companyHtml = hasValue(company)
-    ? `<h3 class="entry__company">${escapeHtml(company)}</h3>`
-    : "";
-  const desktopTitle = renderJobTitleDesktop({ company, role, team });
+  const companyHtml = renderCompanyName(company, icon);
+  const desktopTitle = renderJobTitleDesktop({ company, role, team, icon });
 
   return `
     <div class="entry__header">
